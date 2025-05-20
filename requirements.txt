@@ -1,0 +1,15 @@
+chex
+einops
+flax==0.8.1
+tensorflow-datasets
+#torchaudio
+#torchvision
+torchtext
+pydub
+datasets
+tqdm
+wandb
+# Installed separately: JAX
+# jax==0.4.24
+# and Torch CPU
+# torch

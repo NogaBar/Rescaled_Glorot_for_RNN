@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Zucchet"
+    given-names: "Nicolas"
+  - family-names: "Meier"
+    given-names: "Robert"
+  - family-names: "Schug"
+    given-names: "Simon"
+title: "Minimal implementation of linear recurrent units"
+version: 0.0.1
+url: "https://github.com/NicolasZucchet/minimal-LRU"
+date-released: 2023-MAY-30
