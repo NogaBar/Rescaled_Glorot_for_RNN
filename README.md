@@ -1,8 +1,10 @@
 # Rescaled Glorot for RNN
 
-This repository includes implementation for linear RNN and linear diagonal RNN and is based on the on the [minimal LRU unofficial github repository](https://github.com/NicolasZucchet/minimal-LRU) of the LRU.
 
+This repository provides implementations of the linear RNN and linear diagonal RNN models.
+It is based on the [minimal LRU unofficial github repository](https://github.com/NicolasZucchet/minimal-LRU).
 
+While we reuse the training infrastructure from the original repository, we implement the linear RNN model variants and incorporate the rescaled initialization.
 
 ## Requirements & Installation
 
@@ -85,5 +87,11 @@ The network is given a sequence of bytes representing a text and has to classify
 two categories.
 
 ```
-python run_train.py --model diag-rnn --n_layers 6 --dataset imdb-classification --warmup_end 7 --d_model 192 --d_hidden 256  --batch_size 32 --A_init fixed --epochs 65 --lr_factor 0.025```
+python run_train.py --model diag-rnn --n_layers 6 --dataset imdb-classification --warmup_end 7 --d_model 192 --d_hidden 256  --batch_size 32 --A_init fixed --epochs 65 --lr_factor 0.025
+```
+
+## Reference
+Zucchet, N., Meier, R., & Schug, S. (2023). **Minimal implementation of linear recurrent units** . [GitHub Repository](https://github.com/NicolasZucchet/minimal-LRU). Released on May 30, 2023.
+
+
 
