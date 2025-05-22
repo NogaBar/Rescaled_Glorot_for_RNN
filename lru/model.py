@@ -248,7 +248,7 @@ class ClassificationModel(nn.Module):
         return nn.log_softmax(x, axis=-1)
 
 
-
+############# This is our implementation of the linear RNN module #############
 class RNN(nn.Module):
     """
     RNN module in charge of the recurrent processing.
@@ -362,7 +362,7 @@ def fixed_glorot_diag(key, shape, dtype=jnp.float32, n=128):
 def identity_diag(key, shape, dtype=jnp.float32):
     return jnp.ones(shape[0])
 
-
+############# This is our implementation of the diagonal linear RNN module #############
 class DiagRNN(nn.Module):
     """
     DiagRNN module in charge of the recurrent processing.
